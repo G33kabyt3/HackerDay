@@ -33,5 +33,13 @@ public class EventData {
 		setList.get(1).rule = "666";
 		setList.get(1).graphic.add(0, "/******************************/");
 		setList.get(1).graphic.add(1, "/              /\\              /");
+		setList.get(1).graphic.add(2, "/             /  \\             /");
+		setList.get(1).graphic.add(3, "/            /,--.\\            /");
+		setList.get(1).graphic.add(4, "/           /< () >\\           /");
+		setList.get(1).graphic.add(5, "/          /  `--'  \\          /");
+		setList.get(1).graphic.add(6, "/         /          \\         /");
+		setList.get(1).graphic.add(7, "/        /            \\        /");
+		setList.get(1).graphic.add(8, "/       /______________\\       /");
+		setList.get(1).graphic.add(9, "/******************************/");
 	}
 }
