@@ -4,15 +4,17 @@ import java.util.LinkedList;
 
 public class GameLogic {
 	LinkedList<Event> setList;
+	LinkedList<String> msgList;
 	public GameLogic()
 	{
       setList = EventData.setList;
+      msgList = MsgData.msgList;
 	}
 	
-	public void RandomMessage(String[] message, int bound)
+	public void RandomMessage()
 	{
-		int eventNum = (int)(Math.round(Math.random() * bound));
-		System.out.println(message[eventNum]);
+		int msgNum = (int)(Math.floor(Math.random() * msgList.size()));
+		System.out.println(msgList.get(msgNum));
 	}
 	
 	public int CalcScore(int[][] userData)
