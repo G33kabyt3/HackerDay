@@ -19,9 +19,12 @@ public class Player {
     {
     	for(int i = 0; i < userData.length(); i++) 
     	{
-    		if (userData.charAt(i) == this.userData[0][i])
+    		for(int j = 0; j < 95; j ++)
     		{
-    			++this.userData[1][i];
+    			if ((int)userData.charAt(i) == this.userData[0][j])
+        		{
+        			++this.userData[1][j];
+        		}
     		}
     	}
     }

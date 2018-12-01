@@ -31,7 +31,9 @@ public class GameLogic {
             sum += userData[1][i];
         }
 
+        
         score = (int)sum;
+        
         average = (double)sum / 95;
 
         for (int i = 0; i < 95; i++)
@@ -43,8 +45,7 @@ public class GameLogic {
 
         stdDeviation = Math.sqrt(variance);
 
-        player.score += (int)Math.round((1000 * score) / stdDeviation);
-        System.out.println(score);
+        player.score += (int)Math.round((1000 * score) / stdDeviation) - player.score;
     }
 
     public void RandomEvent(Player player)
