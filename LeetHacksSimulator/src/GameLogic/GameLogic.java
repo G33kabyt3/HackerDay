@@ -44,6 +44,7 @@ public class GameLogic {
         stdDeviation = Math.sqrt(variance);
 
         player.score += (int)Math.round((1000 * score) / stdDeviation);
+        System.out.println(score);
     }
 
     public void RandomEvent(Player player)
