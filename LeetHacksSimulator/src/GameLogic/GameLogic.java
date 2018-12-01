@@ -67,7 +67,7 @@ public class GameLogic {
 
     public void RandomEvent(Player player)
     {
-        int eventNum = (int)(Math.round(Math.random() * setList.size()));
+        int eventNum = (int)(Math.floor(Math.random() * setList.size()));
 
         setList.get(eventNum).Draw();
         
