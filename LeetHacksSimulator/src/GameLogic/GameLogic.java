@@ -7,8 +7,8 @@ public class GameLogic {
 	LinkedList<String> msgList;
 	public GameLogic()
 	{
-      setList = EventData.setList;
-      msgList = MsgData.msgList;
+      setList = new EventData().setList;
+      msgList = new MsgData().msgList;
 	}
 	
 	public void RandomMessage()
@@ -17,8 +17,9 @@ public class GameLogic {
 		System.out.println(msgList.get(msgNum));
 	}
 	
-	public int CalcScore(int[][] userData)
+	public void CalcScore(Player player)
     {
+		int[][] userData = player.userData;
         int score;
         double sum = 0;
         double average;
@@ -42,7 +43,7 @@ public class GameLogic {
 
         stdDeviation = Math.sqrt(variance);
 
-        return (int)Math.round((1000 * score) / stdDeviation);
+        player.score += (int)Math.round((1000 * score) / stdDeviation);
     }
 
     public void RandomEvent(Player player)

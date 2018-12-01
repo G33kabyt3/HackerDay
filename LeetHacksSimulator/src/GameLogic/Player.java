@@ -3,7 +3,7 @@ package GameLogic;
 public class Player {
 	String name;
     public int[][] userData = new int[2][95];
-    public int score;
+    public int score = 0;
 
     public Player(String name)
     {
