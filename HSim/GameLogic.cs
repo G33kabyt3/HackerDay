@@ -4,9 +4,6 @@ namespace HSim
 {
     public class GameLogic
     {
-        public GameLogic()
-        {
-        }
         public int CalcScore(int[,] userData)
         {
             int score;
@@ -33,6 +30,16 @@ namespace HSim
             stdDeviation = Math.Sqrt(variance);
 
             return (int)Math.Round((1000 * score) / stdDeviation);
+        }
+
+        public void RandomEvent(Event[] setList, int a, int b, Player player)
+        {
+            Random rnd = new Random();
+            int eventNum = rnd.Next(a, b);
+
+            setList[eventNum].Draw();
+            player.score += setList[eventNum].ScoreBonus(Console.ReadLine());
+
         }
     }
 }
