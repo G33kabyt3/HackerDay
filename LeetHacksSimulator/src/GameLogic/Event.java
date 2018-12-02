@@ -24,7 +24,7 @@ public class Event {
 
     public int ScoreBonus(String userTry)
     {
-        return 5000 * (rule.length() - calculate(rule, userTry));
+        return 10000 * (rule.length() - calculate(rule, userTry));
     }
 
     public static int costOfSubstitution(char a, char b) {
