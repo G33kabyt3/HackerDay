@@ -30,7 +30,7 @@ public class EventData {
 		
 		
 		setList.add(1, new Event("Illuminati"));
-		setList.get(1).rule = "666";
+		setList.get(1).rule = "Pop Pop";
 		setList.get(1).graphic.add(0, "/******************************/");
 		setList.get(1).graphic.add(1, "/              /\\              /");
 		setList.get(1).graphic.add(2, "/             /  \\             /");
