@@ -1,5 +1,6 @@
 package GameLogic;
 
+import java.awt.BorderLayout;
 import java.awt.Image;
 import java.io.IOException;
 
@@ -29,8 +30,9 @@ public class DisplayImage {
     public void displayImage(Image image) {
         JLabel label = new JLabel(new ImageIcon(image));
 
-        JPanel panel = new JPanel();
+        JPanel panel = new JPanel(new BorderLayout());
         panel.add(label);
+        panel.setName("CONGRAGULATION");
 
         JScrollPane scrollPane = new JScrollPane(panel);
         JOptionPane.showMessageDialog(null, scrollPane);

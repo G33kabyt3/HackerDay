@@ -18,7 +18,7 @@ public class GameLogic {
 	public void RandomMessage()
 	{
 		int msgNum = (int)(Math.floor(Math.random() * msgList.size()));
-		System.out.println(msgList.get(msgNum));
+		System.out.println("<" + msgList.get(msgNum) + ">");
 	}
 	
 	public void CalcScore(Player player)
