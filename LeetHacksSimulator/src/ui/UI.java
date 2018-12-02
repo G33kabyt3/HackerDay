@@ -28,7 +28,7 @@ public class UI {
   
   static Player p  = new Player("P1");
   static GameLogic g = new GameLogic();
-  static int roundTime= 10000;
+  static int roundTime= 20000;
 
   static JFrame frame;
   public static void main(String[] args) {
@@ -45,8 +45,6 @@ public class UI {
              
                 p.insert(String.valueOf(e.getKeyChar()));
                 g.CalcScore(p);
-                System.out.println(p.score);
-             
               
          }
 
@@ -63,8 +61,13 @@ public class UI {
     
     for(int i =0; i<roundTime; i+=1000)
     { 
-      if (Math.random()<0.9)
+      if (Math.random()<0.4)
         timer.schedule(new RandomMessage(frame, p,g), i);
+    }
+    for(int i =0; i<roundTime; i+=5000)
+    { 
+      if (Math.random()<0.05)
+        timer.schedule(new RandomEvent(frame, p,g), i);
     }
     timer.schedule(new GameOver(frame, p, g), roundTime);
 
@@ -118,4 +121,21 @@ class RandomMessage extends TimerTask {
   public void run() {
      g.RandomMessage();
   }
+}
+
+class RandomEvent extends TimerTask {
+	  
+	JFrame frame; 
+	Player p;
+	GameLogic g;
+	public RandomEvent(JFrame frame, Player p, GameLogic g)
+	{
+		this.frame = frame;
+		this.p = p;
+		this.g = g;
+	}
+	public void run() {
+		g.RandomEvent(p);
+		
+	}
 }
