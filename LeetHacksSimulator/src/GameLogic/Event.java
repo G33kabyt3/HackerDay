@@ -19,7 +19,7 @@ public class Event {
         {
             System.out.println(graphic.get(i));
         }
-        System.out.println("Type " + rule+ " to counterhack!");
+        System.out.println("Type: '" + rule+ "' to counterhack!");
     }
 
     public int ScoreBonus(String userTry)

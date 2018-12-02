@@ -99,7 +99,7 @@ public class UI {
   
   public static void updateLabel(String s)
   {
-    frame.getContentPane().removeAll();
+    //frame.getContentPane().removeAll();
     JLabel label = new JLabel(s);
     label.setForeground(Color.GREEN);
     frame.add(label);
