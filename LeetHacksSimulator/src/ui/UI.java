@@ -85,7 +85,7 @@ public class UI {
     
     for(int i =0; i<roundTime; i+=1000)
     { 
-      if (Math.random()<0.2)
+      if (Math.random()<0.9)
         timer.schedule(new RandomMessage(frame, p,g), i);
     }
     for(int i =0; i<roundTime; i+=5000)
@@ -123,7 +123,9 @@ class GameOver extends TimerTask {
   public void run() {
     System.out.println("Congrats, your score is: "+ p.score);
     if (p.score < 50000) {
-    	DisplayImage img = new DisplayImage();
+    	DisplayImage img = new DisplayImage("AjitPai.jpg");
+    } else {
+    	DisplayImage img = new DisplayImage("RobbieRotton.png");
     }
     frame.getContentPane().removeAll();
     frame.dispose();

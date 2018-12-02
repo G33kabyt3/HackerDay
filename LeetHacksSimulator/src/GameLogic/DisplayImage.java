@@ -13,14 +13,16 @@ import javax.swing.JScrollPane;
 
 public class DisplayImage {
 
-    public DisplayImage() {
+	String imagestr;
+    public DisplayImage(String img) {
+    	imagestr = img;
         displayImage(getImage());
     }
 
     private Image getImage() {
         try {
             return ImageIO.read(getClass().getResourceAsStream(
-                    "AjitPai.jpg"));
+                    imagestr));
         } catch (IOException e) {
             e.printStackTrace();
             return null;
