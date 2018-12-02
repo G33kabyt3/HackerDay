@@ -6,11 +6,11 @@ public class MsgData {
 	public LinkedList<String> msgList;
 	public MsgData() {
 		msgList = new LinkedList<String>();
-		msgList.add(0, "WARNING: THE CIA IS WATCHING");
-		msgList.add(1, "PLEASE KILL YOURSELF SLOWLY ;)");
-		msgList.add(2, "HERE COMES THE FUCKIN REDS");
-		msgList.add(3, "AHHHHHHHHHHHHH");
-		msgList.add(4, "Dair motherfucker!");
+		msgList.add(0, "WARNING: BIG BROTHER IS WATCHING!!!");
+		msgList.add(1, "AlgorithmS RunninG IN O(0).");
+		msgList.add(2, "B3TT3R D3AD THAN R3D!!!");
+		msgList.add(3, "AHHHHHHHHHHHHH!!!");
+		msgList.add(4, "Dair!");
 		msgList.add(5, "PineapplE");
 		msgList.add(6, "MultI-ShinE ActivateD");
 		msgList.add(7, "Hacking into the Mainframe...");
@@ -28,18 +28,26 @@ public class MsgData {
 		msgList.add(19, "mmm... firewall... nice and toasty...");
 		msgList.add(20, "F1R5T, 1'LL 8RK UR 3NCR1PTI0N!!! TH3N, 1'LL 8REAK UR HARDWAR3!!! THEN, I'LL 8REAK FOR LUUUUUUNCH!!!");
 		msgList.add(21, "8WHAHAHAAHAHAHAHAHAH!!!!");
-		msgList.add(22, "hee hee");
+		msgList.add(22, "hee hee...");
 		msgList.add(22, "Lol!");
 		msgList.add(23,"KeK");
 		msgList.add(24, "5HARKS!!! W1TH!!! LAS3RS!!!");
-		msgList.add(25, "whose a good little sql database. yes you are! yes you are!");
+		msgList.add(25, "whose a good little sql database. yes you are! yes you are...!");
 		msgList.add(26, "CurrenTYeaR=20xX");
 		msgList.add(27,"Hit 'em with the DDOS!");
 		msgList.add(28, "N3T N3UTRALITY 1S A 8AS1C HUMAN R1GHT!!!");
 		msgList.add(29, "Cut corners until all you got left is a circle!");
 		msgList.add(30, "UploadinG ViruS");
 		msgList.add(31, "SurfinG DarK WeB");
-		msgList.add(32, "");
+		msgList.add(32, "Were you expecting a message?!");
+		msgList.add(33, "cd /The_Real_Deal");
+		msgList.add(34, "Optimal!");
+		msgList.add(35, "all these messages are cringy...");
+		msgList.add(36, "DoeS IT LooP? DoeS IT NoT? I Don'T KnoW... I Can'T KnoW");
+		msgList.add(37,"BULLET");
+		msgList.add(38, "Nah ah ah! Didn't say the magic word!");
+		msgList.add(39, "MY NamE IS B-TreE-PO, YouR PersonaL HackinG AssistenT");
+		msgList.add(40, "EndOfFile Exception");
 		
 	}
 }
