@@ -1,6 +1,10 @@
 package GameLogic;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class GameLogic {
 	LinkedList<Event> setList;
@@ -53,9 +57,13 @@ public class GameLogic {
         int eventNum = (int)(Math.floor(Math.random() * setList.size()));
 
         setList.get(eventNum).Draw();
-        
-        player.score += setList.get(eventNum).ScoreBonus("");
-        //TODO
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+       
+        try {
+        	player.score += setList.get(eventNum).ScoreBonus(reader.readLine());	
+        } catch (Exception e) {
+        	
+        }
 
     }
     
