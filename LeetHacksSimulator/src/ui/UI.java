@@ -61,6 +61,7 @@ public class UI {
          }
  });
     
+    
     for(int i =0; i<roundTime; i+=1000)
     { 
       if (Math.random()<0.9)
