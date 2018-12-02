@@ -88,6 +88,26 @@ public class EventData {
     setList.get(2).graphic.add(41, "/          q__p         /");
     setList.get(2).graphic.add(42, "/***********************/");  
     
+    setList.add(3, new Event("Loss"));
+    setList.get(3).rule = "Is this Loss?";
+    setList.get(3).graphic.add(0, "/************************/");
+    setList.get(3).graphic.add(1, "/⠀⠀⠀⣴⣴⡤                 /");
+    setList.get(3).graphic.add(2, "/⣠⠀⢿⠇⡇⠀⠀⠀⠀⠀⠀⠀⢰⢷⡗       /");
+    setList.get(3).graphic.add(3, "/⠀⢶⢽⠿⣗⠀⠀⠀⠀⠀⠀⠀⠀⣼⡧⠂⠀⠀⣼⣷⡆/");
+    setList.get(3).graphic.add(4, "/⠀⠀⣾⢶⠐⣱⠀⠀⠀⠀⠀⣤⣜⣻⣧⣲⣦⠤⣧⣿⠶/");
+    setList.get(3).graphic.add(5, "/⠀⢀⣿⣿⣇⠀⠀⠀⠀⠀⠀⠛⠿⣿⣿⣷⣤⣄⡹⣿⣷/");
+    setList.get(3).graphic.add(6, "/⠀⢸⣿⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⣿⣿⣿⣿⣿/");
+    setList.get(3).graphic.add(7, "/⠀⠿⠃⠈⠿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⠿⠿⠿/");
+    setList.get(3).graphic.add(8, "/⠀⢀⢀⡀⠀⢀⣤⠀⠀⠀⠀⠀⠀⠀⡀⡀      /");
+    setList.get(3).graphic.add(9, "/⠀⣿⡟⡇⠀⠭⡋⠅⠀⠀⠀⠀⠀⢰⣟⢿      /");
+    setList.get(3).graphic.add(10, "/⠀⣹⡌⠀⠀⣨⣾⣷⣄⠀⠀⠀⠀⢈⠔⠌     /");
+    setList.get(3).graphic.add(11, "/⠰⣷⣿⡀⢐⢿⣿⣿⢻⠀⠀⠀⢠⣿⡿⡤⣴⠄⢀⣀⡀/");
+    setList.get(3).graphic.add(12, "/⠘⣿⣿⠂⠈⢸⣿⣿⣸⠀⠀⠀⢘⣿⣿⣀⡠⣠⣺⣿⣷/");
+    setList.get(3).graphic.add(13, "/⠘⣿⣿⠂⠈⢸⣿⣿⣸⠀⠀⠀⢘⣿⣿⣀⡠⣠⣺⣿⣷/");
+    setList.get(3).graphic.add(14, "/⣿⣿⡇⠀⢸⣿⣿⡇⠀⠀⠉⠉⠉⠉⠉⠉⠁     /");
+    setList.get(3).graphic.add(15, "/************************/");
+    
+    
 		
 	}
 }
